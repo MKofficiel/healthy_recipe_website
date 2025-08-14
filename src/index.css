@@ -17,8 +17,13 @@
   --color-teal-500: #49ac9b;
   --color-indigo-500: #697ddb;
   --font-nunito: "Nunito", sans-serif;
+  --rounded-sm: 4px;
 }
-
+@layer components {
+  .navLink {
+    @apply relative border-2 border-transparent text-[18px] leading-[150%] font-semibold tracking-[.3px] group-focus:rounded-sm group-focus:border-current;
+  }
+}
 @layer utility {
   h1 {
     @apply text-[52px] leading-[1.1] font-extrabold tracking-[-2px] md:text-[64px] lg:text-[72px];
