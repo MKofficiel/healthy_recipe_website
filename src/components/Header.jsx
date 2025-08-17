@@ -7,9 +7,9 @@ import Button from "./Button";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="border-b border-neutral-300">
+    <header className="border-b border-neutral-300 px-[60px] py-[15px] max-lg:px-8 max-lg:pt-8 max-lg:pb-4 max-md:p-4">
       {/* container */}
-      <div className="relative max-lg:pt-8 max-md:p-4 md:px-8 md:pb-5 lg:px-[60px] lg:py-[20px]">
+      <div className="relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/">

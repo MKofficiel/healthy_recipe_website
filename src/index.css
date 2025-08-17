@@ -31,6 +31,10 @@
   .text-orange-header {
     @apply after:absolute after:bottom-[18px] after:left-0 after:-z-1 after:h-[40px] after:w-full after:rounded-sm after:bg-orange-500/30 after:content-[''];
   }
+
+  .list-dot {
+    @apply relative text-[20px] leading-[150%] font-medium tracking-[-0.4px] text-neutral-800 before:absolute before:top-1/2 before:left-[-13px] before:size-[8px] before:-translate-y-1/2 before:rounded-full before:bg-neutral-800 before:content-[''] max-md:before:top-[15px] lg:before:top-[13px];
+  }
 }
 @layer utility {
   h1 {
@@ -47,6 +51,9 @@
 
   .container {
     @apply mx-auto max-w-[1200px] max-lg:px-8 max-md:px-4;
+  }
+  h4 {
+    @apply text-[24px] leading-[130%] font-bold tracking-[-1px];
   }
 
   .hero-image-shadow {
