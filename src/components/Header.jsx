@@ -7,16 +7,16 @@ import Button from "./Button";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="h-[72px]">
+    <header className="border-b border-neutral-300">
       {/* container */}
-      <div className="relative p-4 md:px-8 md:pt-8 md:pb-[20px] lg:px-[60px] lg:py-[20px]">
+      <div className="relative max-lg:pt-8 max-md:p-4 md:px-8 md:pb-5 lg:px-[60px] lg:py-[20px]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/">
             <img
               src="/assets/images/logo.svg"
               alt="logo"
-              className="-ml-4 block h-[32px] w-[242.4px]"
+              className="-ml-4 block h-[32px] w-[242.4px] lg:h-auto lg:w-[260px]"
             />
           </Link>
 
