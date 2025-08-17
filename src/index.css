@@ -8,11 +8,12 @@
   --color-neutral-900: #163a34;
   --color-neutral-600: #395852;
   --color-neutral-300: #d0dcd9;
-  --color-neutral-200: #e0e6e3;
+  --color-neutral-200: #e9ede8;
   --color-neutral-300: #d0dcd9;
   --color-neutral-100: #f6f5f1;
   --color-neutral-0: #ffffff;
 
+  --color-neutral-800: #395852;
   --color-orange-500: #fe9f6b;
   --color-teal-500: #49ac9b;
   --color-indigo-500: #697ddb;
@@ -23,6 +24,13 @@
   .navLink {
     @apply relative border-2 border-transparent text-[18px] leading-[150%] font-semibold tracking-[.3px] group-focus:rounded-sm group-focus:border-current;
   }
+
+  .text-orange {
+    @apply after:absolute after:bottom-[2px] after:left-0 after:-z-1 after:h-1/2 after:w-full after:rounded-sm after:bg-orange-500 after:content-[''];
+  }
+  .text-orange-header {
+    @apply after:absolute after:bottom-[18px] after:left-0 after:-z-1 after:h-[40px] after:w-full after:rounded-sm after:bg-orange-500/30 after:content-[''];
+  }
 }
 @layer utility {
   h1 {
@@ -30,6 +38,22 @@
   }
 
   h2 {
+    @apply text-[40px] leading-[120%] font-extrabold tracking-[-2px] text-neutral-900 md:text-[48px];
+  }
+
+  h3 {
+    @apply text-[32px] leading-[130%] font-bold tracking-[-1px];
+  }
+
+  .container {
+    @apply mx-auto max-w-[1200px] max-lg:px-8 max-md:px-4;
+  }
+
+  .hero-image-shadow {
+    box-shadow: 0 0 0 3.45px #ffffff;
+  }
+  p {
+    @apply text-[20px] leading-[150%] font-medium tracking-[-0.4px] text-neutral-800;
   }
 }
 
