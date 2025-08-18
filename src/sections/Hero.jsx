@@ -20,7 +20,9 @@ function Hero() {
               <span>—no processed junk, no guesswork.</span>
             </p>
 
-            <Button variant="primary">Start exploring</Button>
+            <Button to="/recipes" variant="primary">
+              Start exploring
+            </Button>
           </div>
           {/* Hero image box */}
           <div className="hero-image-shadow relative rounded-[12px] bg-white">

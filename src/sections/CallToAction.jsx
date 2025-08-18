@@ -9,7 +9,9 @@ function CallToAction() {
           <p className="mb-8 lg:mb-10">
             Hit the button, pick a recipe, and get dinner on the table—fast.
           </p>
-          <Button variant="primary">Browse recipes</Button>
+          <Button to="/recipes" variant="primary">
+            Browse recipes
+          </Button>
         </div>
 
         <div className="absolute max-md:hidden md:bottom-[-20px] md:left-[-5%] md:h-[232px] md:w-[180px] lg:top-[10px] lg:h-[390px] lg:w-[315px]">
