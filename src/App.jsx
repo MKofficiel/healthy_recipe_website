@@ -2,24 +2,32 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Recipes from "./pages/Recipes";
+import RecipesDetails from "./pages/RecipesDetails";
+import { Children } from "react";
+import AppLayout from "./pages/AppLayout";
 
 const router = createBrowserRouter([
   {
-    index: <Home />,
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/recipes",
-    element: <Recipes />,
-  },
-  {
-    path: "/recipes/:recipeId",
-    element: <Recipes />,
+    element: <AppLayout />,
+    children: [
+      {
+        index: true,
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/recipes",
+        element: <Recipes />,
+      },
+      {
+        path: "/recipes/:recipeId",
+        element: <RecipesDetails />,
+      },
+    ],
   },
 ]);
 

@@ -9,13 +9,10 @@ import Why from "../sections/Why";
 function About() {
   return (
     <main>
-      <Header />
       <AboutHero />
       <Why />
       <OurPhilosophy />
       <MissionStatement />
-      <CallToAction />
-      <Footer />
     </main>
   );
 }
